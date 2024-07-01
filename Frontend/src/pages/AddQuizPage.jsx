@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AddQuizPage = () => {
   const handleSubmit = async (quiz) => {
     try {
-      const response = await fetch("http://localhost:5000/api/quizzes", {
+      const response = await fetch("https://aspirenex.onrender.com/api/quizzes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

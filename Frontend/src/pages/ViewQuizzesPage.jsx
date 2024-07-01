@@ -9,7 +9,7 @@ const ViewQuizzesPage = () => {
   useEffect(() => {
     const fetchQuizzes = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/quizzes"); // Endpoint for fetching quizzes
+        const response = await axios.get("https://aspirenex.onrender.com/api/quizzes"); // Endpoint for fetching quizzes
         setQuizzes(response.data);
       } catch (error) {
         console.error("Error fetching quizzes:", error);

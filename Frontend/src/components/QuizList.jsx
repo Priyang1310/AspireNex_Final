@@ -8,7 +8,7 @@ const QuizList = ({ quizzes, setQuizzes }) => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/quizzes/${id}`, {
+      const response = await fetch(`https://aspirenex.onrender.com/api/quizzes/${id}`, {
         method: "DELETE",
       });
       if (response.ok) {

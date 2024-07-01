@@ -11,7 +11,7 @@ const RollNumberQuizzes = () => {
     const fetchQuizzes = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/quizzes/rollNumber/${rollNumber}`
+          `https://aspirenex.onrender.com/api/quizzes/rollNumber/${rollNumber}`
         );
         if (response.ok) {
           const data = await response.json();

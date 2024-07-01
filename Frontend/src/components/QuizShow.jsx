@@ -10,7 +10,7 @@ const QuizShow = () => {
     const fetchQuiz = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/quizzes/${id}`,
+          `https://aspirenex.onrender.com/api/quizzes/${id}`,
           { method: "GET" }
         ); // Adjust the URL if needed
         const data = await response.json();

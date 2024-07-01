@@ -10,7 +10,7 @@ const QuizUpdate = ({ quizzes, setQuizzes }) => {
   useEffect(() => {
     const fetchQuiz = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/quizzes/${id}`);
+        const response = await fetch(`https://aspirenex.onrender.com/api/quizzes/${id}`);
         const data = await response.json();
         setQuiz(data);
       } catch (error) {
@@ -25,7 +25,7 @@ const QuizUpdate = ({ quizzes, setQuizzes }) => {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/api/quizzes/${id}`, {
+      const response = await fetch(`https://aspirenex.onrender.com/api/quizzes/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
